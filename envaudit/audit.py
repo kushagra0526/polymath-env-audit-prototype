@@ -20,11 +20,9 @@ def shortest_path(env, from_state=None, limit=60000):
         if env.verify(env.state) and path:
             env.set_state(start)
             return path
-        if env.t >= env.horizon:
-            continue
         for a in env.valid_actions():
             env.set_state(s)
-            env.step(a)
+            env.step(a, want_obs=False)
             ns = env.get_state()
             if key(ns) not in seen:
                 seen[key(ns)] = 1
@@ -43,12 +41,12 @@ def check_deterministic(env, trials=12, length=10):
             if not va:
                 break
             acts.append(rng.choice(va))
-            env.step(acts[-1])
+            env.step(acts[-1], want_obs=False)
         h1 = env.get_state()
         env.reset(seed=k)
         for a in acts:
             if a in env.valid_actions():
-                env.step(a)
+                env.step(a, want_obs=False)
         if env.get_state() != h1:
             return False
     return True
@@ -83,7 +81,7 @@ def audit(env, with_horizon_check=True):
             va = env.valid_actions()
             if not va:
                 break
-            env.step(rng.choice(va))
+            env.step(rng.choice(va), want_obs=False)
             st = env.get_state()
             kk = (st[0], st[1])
             if kk not in memo:
@@ -100,7 +98,7 @@ def audit(env, with_horizon_check=True):
     if sp:
         env.reset()
         for a in sp:
-            env.step(a)
+            env.step(a, want_obs=False)
         solved = dict(env.state)
         for item, need in env.goal.items():
             if need > 0:

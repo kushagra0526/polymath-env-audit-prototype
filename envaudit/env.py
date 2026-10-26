@@ -66,7 +66,7 @@ class Env:
                 out.append(name)
         return out
 
-    def step(self, action):
+    def step(self, action, want_obs=True):
         cost, gain, once = self.rules[action]
         for k, v in cost.items():
             if not k.startswith("RESET_"):
@@ -80,7 +80,7 @@ class Env:
         if once:
             self.once_used.add(action)
         self.t += 1
-        return self.observe(), self.verify(self.state), self.t >= self.horizon
+        return (self.observe() if want_obs else None), self.verify(self.state), self.t >= self.horizon
 
     def prompt(self):
         return "Reach inventory " + ", ".join(f"{k}>={v}" for k, v in self.goal.items()) + f" within {self.horizon} steps."
