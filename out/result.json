@@ -1,0 +1,169 @@
+{
+ "dev": {
+  "clean": {
+   "n": 54,
+   "audit_exact": 54,
+   "audit_contains": 0,
+   "baseline_contains": 0,
+   "flagged_other": 0
+  },
+  "dead_end": {
+   "n": 17,
+   "audit_exact": 17,
+   "audit_contains": 17,
+   "baseline_contains": 0,
+   "flagged_other": 0
+  },
+  "leak": {
+   "n": 18,
+   "audit_exact": 18,
+   "audit_contains": 18,
+   "baseline_contains": 0,
+   "flagged_other": 0
+  },
+  "loose_checker": {
+   "n": 17,
+   "audit_exact": 17,
+   "audit_contains": 17,
+   "baseline_contains": 0,
+   "flagged_other": 0
+  },
+  "nondeterministic": {
+   "n": 18,
+   "audit_exact": 18,
+   "audit_contains": 18,
+   "baseline_contains": 0,
+   "flagged_other": 0
+  },
+  "trivial": {
+   "n": 18,
+   "audit_exact": 18,
+   "audit_contains": 18,
+   "baseline_contains": 18,
+   "flagged_other": 0
+  },
+  "unsolvable": {
+   "n": 18,
+   "audit_exact": 18,
+   "audit_contains": 18,
+   "baseline_contains": 18,
+   "flagged_other": 0
+  }
+ },
+ "held_out_run1": {
+  "clean": {
+   "n": 48,
+   "audit_exact": 48,
+   "audit_contains": 0,
+   "baseline_contains": 0,
+   "flagged_other": 0
+  },
+  "dead_end": {
+   "n": 16,
+   "audit_exact": 14,
+   "audit_contains": 14,
+   "baseline_contains": 0,
+   "flagged_other": 2
+  },
+  "horizon_short": {
+   "n": 16,
+   "audit_exact": 0,
+   "audit_contains": 0,
+   "baseline_contains": 0,
+   "flagged_other": 0
+  },
+  "leak": {
+   "n": 16,
+   "audit_exact": 16,
+   "audit_contains": 16,
+   "baseline_contains": 0,
+   "flagged_other": 0
+  },
+  "loose_checker": {
+   "n": 16,
+   "audit_exact": 16,
+   "audit_contains": 16,
+   "baseline_contains": 0,
+   "flagged_other": 0
+  },
+  "nondeterministic": {
+   "n": 16,
+   "audit_exact": 16,
+   "audit_contains": 16,
+   "baseline_contains": 0,
+   "flagged_other": 0
+  },
+  "trivial": {
+   "n": 16,
+   "audit_exact": 16,
+   "audit_contains": 16,
+   "baseline_contains": 16,
+   "flagged_other": 0
+  },
+  "unsolvable": {
+   "n": 16,
+   "audit_exact": 16,
+   "audit_contains": 16,
+   "baseline_contains": 16,
+   "flagged_other": 0
+  }
+ },
+ "held_out_run2_with_horizon_check": {
+  "clean": {
+   "n": 48,
+   "audit_exact": 48,
+   "audit_contains": 0,
+   "baseline_contains": 0,
+   "flagged_other": 0
+  },
+  "dead_end": {
+   "n": 16,
+   "audit_exact": 14,
+   "audit_contains": 14,
+   "baseline_contains": 0,
+   "flagged_other": 2
+  },
+  "horizon_short": {
+   "n": 16,
+   "audit_exact": 15,
+   "audit_contains": 15,
+   "baseline_contains": 0,
+   "flagged_other": 0
+  },
+  "leak": {
+   "n": 16,
+   "audit_exact": 16,
+   "audit_contains": 16,
+   "baseline_contains": 0,
+   "flagged_other": 0
+  },
+  "loose_checker": {
+   "n": 16,
+   "audit_exact": 16,
+   "audit_contains": 16,
+   "baseline_contains": 0,
+   "flagged_other": 0
+  },
+  "nondeterministic": {
+   "n": 16,
+   "audit_exact": 16,
+   "audit_contains": 16,
+   "baseline_contains": 0,
+   "flagged_other": 0
+  },
+  "trivial": {
+   "n": 16,
+   "audit_exact": 16,
+   "audit_contains": 16,
+   "baseline_contains": 16,
+   "flagged_other": 0
+  },
+  "unsolvable": {
+   "n": 16,
+   "audit_exact": 16,
+   "audit_contains": 16,
+   "baseline_contains": 16,
+   "flagged_other": 0
+  }
+ }
+}
